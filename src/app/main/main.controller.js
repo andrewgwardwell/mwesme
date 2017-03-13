@@ -32,6 +32,10 @@ export class MainController {
   }
 
   toggleStates(state) {
-    this.middle = state;
+    if(state === this.middle){
+      this.middle = '';
+    } else {
+      this.middle = state;
+    }
   }
 }
